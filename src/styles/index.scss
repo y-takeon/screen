@@ -1,0 +1,47 @@
+body,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+li {
+  list-style: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* flex布局 */
+.flex-box {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: nowrap;
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.align-end {
+    align-items: flex-end;
+  }
+
+  .flex-item-1 {
+    flex: 1;
+  }
+
+  .flex-item-2 {
+    flex: 2;
+  }
+
+  .flex-item-7 {
+    flex: 7;
+  }
+}
