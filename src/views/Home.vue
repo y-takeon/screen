@@ -6,7 +6,9 @@
     <div class="main flex-box">
       <div class="main-item flex-item-2">
         <box-container>
-          1
+          <div class="case-wra bg-img">
+            <list :title="'案件信息'"/>
+          </div>
         </box-container>
       </div>
       <div class="main-item flex-item-2">
@@ -43,6 +45,7 @@
 <script>
 import userScreenData from '@/hooks/screenData'
 import BoxContainer from '@/components/BoxContainer'
+import List from '@/components/List'
 export default {
   name: "Home",
   setup () {
@@ -53,7 +56,8 @@ export default {
     };
   },
   components: {
-    BoxContainer
+    BoxContainer,
+    List
   },
 };
 </script>
@@ -66,6 +70,8 @@ export default {
   position: relative;
 
   .header {
+    float: left;
+    width: 100%;
     height: 220px;
     background-image: url("../assets/top.png");
     background-size: cover;
@@ -81,11 +87,17 @@ export default {
 
   .main {
     padding: 73px 46px 63px 46px;
-    height: 100%;
-
+    height: calc( 100% - 220px );
     .main-item {
       padding: 0 25px;
     }
+  }
+
+  // 案件信息
+  .case-wra {
+    width: 691px;
+    height: 622px;
+    background-image: url("../assets/caseInfo.png");
   }
 }
 </style>
