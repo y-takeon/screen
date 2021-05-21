@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <div class="header"></div>
+    <div class="header">
+      <img src="@/assets/title.png" class="headTitle"/>
+    </div>
     <div class="main flex-box">
       <div class="main-item flex-item-2">
         <box-container>
@@ -62,6 +64,20 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+
+  .header {
+    height: 220px;
+    background-image: url("../assets/top.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .headTitle {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 
   .main {
     padding: 73px 46px 63px 46px;
