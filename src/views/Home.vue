@@ -58,19 +58,17 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../assets/back.png");
+  background-image: url("../assets/back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 
   .main {
-    padding: 4.1vh 3vh 3.3vh 3vh;
-    height: 100vh;
+    padding: 73px 46px 63px 46px;
+    height: 100%;
 
     .main-item {
-      padding: 0 2vh;
+      padding: 0 25px;
     }
   }
 }

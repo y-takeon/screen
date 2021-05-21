@@ -5,10 +5,12 @@ li {
   margin: 0;
   padding: 0;
 }
+
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 8660px;
+  height: 2420px;
 }
+
 li {
   list-style: none;
 }
@@ -17,6 +19,12 @@ li {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+#app,
+.home{
+  height: 100%;
+  width: 100%;
 }
 
 /* flex布局 */
